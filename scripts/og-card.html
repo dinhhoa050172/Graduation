@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<!-- Ảnh xem trước khi chia sẻ link (1200×630), xuất ra public/og-image.jpg.
+     Render lại: chrome --headless=new --hide-scrollbars --window-size=1200,630 --screenshot=og.png file:///.../scripts/og-card.html -->
+
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Cormorant+Garamond:ital,wght@0,600;0,700;1,500&family=Oswald:wght@500;600&display=swap">
+<style>
+  html, body { margin: 0; width: 1200px; height: 630px; overflow: hidden; }
+  body {
+    position: relative;
+    background: radial-gradient(ellipse 80% 90% at 35% 45%, #6A1220 0%, #4E0B16 55%, #2B050B 100%);
+    font-family: 'Cormorant Garamond', Georgia, serif; color: #F3E6CF;
+  }
+  .weave { position: absolute; inset: 0; background-image: repeating-linear-gradient(45deg, rgba(0,0,0,.05) 0 2px, transparent 2px 6px), repeating-linear-gradient(-45deg, rgba(0,0,0,.05) 0 2px, transparent 2px 6px); }
+  .vignette { position: absolute; inset: 0; box-shadow: inset 0 0 160px rgba(15,0,3,.75); }
+  .frame { position: absolute; inset: 22px; border: 1.5px solid rgba(226,188,98,.55); }
+  .frame::after { content: ''; position: absolute; inset: 6px; border: .5px solid rgba(226,188,98,.35); }
+  .text { position: absolute; left: 86px; top: 0; bottom: 0; width: 640px; display: flex; flex-direction: column; justify-content: center; }
+  .gold { background: linear-gradient(180deg, #F8E7B0 0%, #E2BC62 45%, #B88A2E 100%); -webkit-background-clip: text; background-clip: text; color: transparent; }
+  .invited { font-family: 'Great Vibes', cursive; font-size: 112px; line-height: 1.1; filter: drop-shadow(0 3px 4px rgba(15,0,3,.6)); margin-left: -6px; }
+  .celebrating { font-style: italic; font-weight: 500; font-size: 32px; color: #E9D3A8; margin-top: 4px; }
+  .name { font-weight: 700; font-size: 46px; letter-spacing: .12em; margin-top: 2px; white-space: nowrap; }
+  .rule { width: 120px; height: 2px; margin: 26px 0 22px; background: linear-gradient(90deg, #E2BC62, transparent); }
+  .when { font-family: 'Oswald', sans-serif; font-weight: 600; font-size: 34px; letter-spacing: .08em; }
+  .where { font-weight: 600; font-size: 28px; color: #E9D3A8; margin-top: 4px; }
+  .photo { position: absolute; right: 30px; bottom: 0; height: 600px; filter: drop-shadow(0 18px 30px rgba(20,0,2,.6)); -webkit-mask-image: linear-gradient(to bottom, #000 85%, transparent 100%); }
+</style>
+</head>
+<body>
+  <div class="weave"></div>
+  <div class="vignette"></div>
+  <img class="photo" src="../public/images/hoa-cam-bang.png" alt="">
+  <div class="frame"></div>
+  <div class="text">
+    <div class="invited gold">You're Invited!</div>
+    <div class="celebrating">celebrating the graduation of</div>
+    <div class="name">MAI NGUYỄN ĐÌNH HÒA</div>
+    <div class="rule"></div>
+    <div class="when gold">12:30 · THỨ BẢY 07.11.2026</div>
+    <div class="where">Trường Đại học FPT · TP. Hồ Chí Minh</div>
+  </div>
+</body>
+</html>
