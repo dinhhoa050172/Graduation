@@ -6,15 +6,16 @@ const BG = '#5A0A0E', DARK = '#3A0609', CREAM = '#F6EBDD', MUTED = '#EBD9CF', RE
 const OSWALD = "'Oswald', sans-serif", SCRIPT = "'Dancing Script', cursive";
 
 // Khung ảnh (s = zoom, x/y = dịch % khung) giữ nguyên như đã chỉnh trong Claude Design.
+const IMG = import.meta.env.BASE_URL + 'images/';
 const PHOTOS = {
-  main: { src: '/images/anh-chinh.webp', view: { s: 1.0975013465468504, x: 4.875067327342519, y: 31.08666992121646 } },
+  main: { src: IMG + 'anh-chinh.webp', view: { s: 1.0975013465468504, x: 4.875067327342519, y: 31.08666992121646 } },
   strip: [
-    { src: '/images/anh-1.webp', view: { s: 1, x: 0, y: 60.98519376978173 } },
-    { src: '/images/anh-2.webp', view: { s: 1, x: 0, y: 40.052418646909665 } },
-    { src: '/images/anh-3.webp', view: { s: 1, x: 0, y: 25.483362560767166 } },
-    { src: '/images/anh-4.webp', view: { s: 1, x: 0, y: 0 } },
+    { src: IMG + 'anh-1.webp', view: { s: 1, x: 0, y: 60.98519376978173 } },
+    { src: IMG + 'anh-2.webp', view: { s: 1, x: 0, y: 40.052418646909665 } },
+    { src: IMG + 'anh-3.webp', view: { s: 1, x: 0, y: 25.483362560767166 } },
+    { src: IMG + 'anh-4.webp', view: { s: 1, x: 0, y: 0 } },
   ],
-  diploma: { src: '/images/hoa-cam-bang.png' },
+  diploma: { src: IMG + 'hoa-cam-bang.png' },
 };
 
 const MAP_URL = 'https://www.google.com/maps/search/?api=1&query=' + encodeURIComponent(EVENT.place);
