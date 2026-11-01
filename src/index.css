@@ -1,0 +1,14 @@
+html, body { margin: 0; height: 100%; background: #0D1117; }
+#root { height: 100%; }
+a { color: #FF7A1F; }
+a:hover { color: #FFB070; }
+
+@keyframes gm-marq { to { transform: translateX(-50%); } }
+@keyframes tp-breathe { 0%, 100% { opacity: .35; transform: scale(.92); } 50% { opacity: .9; transform: scale(1.12); } }
+@keyframes tp-drift { 0% { transform: translateY(0); opacity: 0; } 20% { opacity: var(--o); } 80% { opacity: var(--o); } 100% { transform: translateY(-120px); opacity: 0; } }
+
+.no-scrollbar { scrollbar-width: none; }
+.no-scrollbar::-webkit-scrollbar { display: none; }
+
+.press-scale { transition: transform 120ms ease-out; }
+.press-scale:active { transform: scale(.97); }
