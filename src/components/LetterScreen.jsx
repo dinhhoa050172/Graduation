@@ -74,8 +74,7 @@ export default function LetterScreen({ onReplay }) {
 
         <div style={{ position: 'relative', height: 440 }}>
           <div style={{ position: 'absolute', inset: 0 }}><ImageSlot {...PHOTOS.main} alt="Mai Nguyễn Đình Hòa" /></div>
-          <div style={{ position: 'absolute', inset: 0, pointerEvents: 'none', background: `linear-gradient(180deg, rgba(58,6,9,.35) 0%, rgba(90,10,14,0) 30%, rgba(90,10,14,.15) 60%, ${BG} 100%)` }} />
-          <div style={{ position: 'absolute', inset: 0, pointerEvents: 'none', background: 'rgba(150,12,20,.22)', mixBlendMode: 'multiply' }} />
+          <div style={{ position: 'absolute', inset: 0, pointerEvents: 'none', background: `linear-gradient(180deg, rgba(58,6,9,.18) 0%, rgba(90,10,14,0) 22%, rgba(90,10,14,0) 62%, ${BG} 100%)` }} />
           <div style={{ position: 'absolute', left: 20, top: 26, display: 'flex', flexDirection: 'column', alignItems: 'flex-start', pointerEvents: 'none' }}>
             <div style={{ padding: '6px 16px 4px', background: '#F4C6C6', color: DARK, fontFamily: OSWALD, fontWeight: 600, fontSize: 34, letterSpacing: '.04em', lineHeight: 1.1 }}>07 . 11 . 2026</div>
             <div style={{ margin: '16px 0 0 14px', fontFamily: SCRIPT, fontWeight: 700, fontSize: 46, lineHeight: 1, color: CREAM, transform: 'rotate(-8deg)', transformOrigin: '0 50%', textShadow: `2px 2px 0 ${DARK}, -1px -1px 0 ${DARK}, 1px -1px 0 ${DARK}, -1px 1px 0 ${DARK}` }}>Graduation Day</div>
